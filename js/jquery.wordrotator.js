@@ -19,9 +19,10 @@
 			stopOnHover: false,
 			changeOnClick: false,
 			words: null,
-			animationIn: "flipInY",
-			animationOut: "flipOutY",
-			speed: 2000
+			animationIn: "rotateInDownLeft",
+			animationOut: "rotateOutDownLeft",
+			speed: 4000
+
 		};
 		var settings = $.extend({}, defaults, options);
 		var listItem

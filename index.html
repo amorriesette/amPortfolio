@@ -26,6 +26,11 @@
   <link rel="stylesheet" type="text/css" href="css2/demo.css" />
   <link rel="stylesheet" type="text/css" href="css2/style.css" />
 
+
+    <link rel="stylesheet" type="text/css" href="css/sidebarDemo.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebarIcons.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebarComponent.css" />
+
   <link href='css/progression.css' rel='stylesheet' type='text/css'>
   <!--type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script -->
   <script type="text/javascript" src="js/progression.js"></script>
@@ -46,7 +51,7 @@
   <script type="text/javascript">
     $(function () {
         $("#myWords").wordsrotator({
-            words: ['design', 'chocolate', 'my family']
+            words: ['placeholder','design', 'chocolate']
         });
     });
 </script>
@@ -56,23 +61,42 @@
 
 </head>
 <body>
-  <div class="wrapper">
-	  <div class="main">
-	    
+ <div id="st-container" class="st-container">
+      <!--  
+        example menus 
+        these menus will be on top of the push wrapper
+      -->
       
-     
-      <section class="page1">
-        <div class="page_container">
-          <img src="img/headerText.png" style="width:100%; height: auto; position: relative; top: -140px; min-width: 70%;" /><span id="myWords" style="position:relative; top:-278px; left:12px; font-size:40pt; z-index:99;"> </span>
-          
-  	    </div>
-  	 
-      </section>
+      <!-- content push wrapper -->
+      <div class="st-pusher">
+        <!--  
+          example menus 
+          these menus will be under the push wrapper
+        -->
+       
+        <nav class="st-menu st-effect-6" id="menu-6">
+          <h2 class="icon icon-stack">Sidebar</h2>
+          <ul>
+            <li><a class="icon icon-data" href="#">Portfolio</a></li>
+            <li><a class="icon icon-location" href="#">About Me</a></li>
+            <li><a class="icon icon-study" href="#">Contact Me</a></li>
+            <li><a class="icon icon-photo" href="#">Resume</a></li>
 
-        <section class="page2">
-          <img src="img/splotch2.png">
-           <div class="wrapper">
-                <div id="ei-slider" class="ei-slider">
+          </ul>
+        </nav>
+        <div class="st-content"><!-- this is the wrapper for the content --><div class="wrapper">
+    <div class="main">
+
+      <section class="page1" id="home">
+        <div class="page_container">
+         <img src="img/headerText.png" style="width:100%; height: auto; position: relative; top: -140px; min-width: 70%;" /><span id="myWords" style="position:relative; top:-325px; left:12px; font-size:40pt; z-index:99;"> </span>
+        </div>
+      </section>
+      
+      <section class="page2" id="portfolio">
+      <div class="wrapper">
+
+      <div id="ei-slider" class="ei-slider">
                     <ul class="ei-slider-large">
                         <li>
                             <img src="images/large/2.jpg" alt="image01" />
@@ -135,18 +159,12 @@
                         <li><a href="#">Slide 7</a><img src="images/thumbs/7.jpg" alt="thumb07" /></li>
                     </ul><!-- ei-slider-thumbs -->
                 </div><!-- ei-slider --> 
-                
-            </div>< wrapper>
+      </div> 
+      </section>
 
-
-        </section>
-
-	    
-	    <section class="page3">
-	      <div class="page_container">
+      <section class="page3" id="about">
+        <div class="page_container">
            <img src="img/aboutMeCollage.png" />
-         
-
           <p> 
             I am a 26 year old front-end developer who loves my wonderful family, amazing food, playing competitive volleyball and everything about technology.<br />
 
@@ -160,24 +178,76 @@
 
             </p>
           <div class="btns">
-  	        
-  	      </div>
-  	    </div>
-      </section>
-
-      <section class="page4">
-        <div class="page_container">
-          <img src="img/Contact.png" width="100%" min-width="50%" height="auto">
-          <div class="btns">
             
           </div>
         </div>
       </section>
 
-    </div>
-   
-  </div>
+      <section class="page4" id="contact">
+        <div class="page_container">
+          <img class="contact_image" src="img/Contact.png" width="50%" min-width="50%" height="auto">
+          
+          <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+          <a href="http://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+          <a href="http://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+          <a href="http://linkedin.com" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a>
+          <a href="http://github.com" class="icon-button github"><i class="icon-github"></i><span></span></a>
+          <a href="afmorriesette@genvelope-alt.com" class="icon-button envelope-alt"><i class="icon-envelope-alt"></i><span></span></a>
+          <script src='http://codepen.io/assets/libs/fullpage/none.js'></script>
+          
 
+          <script src="js/index.js"></script>
+
+          <div class="btns">
+            
+          </div>
+        </div>
+      </section>
+      
+    </div>
+          <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+            <!-- Top Navigation -->
+            
+            
+            <div class="main clearfix">
+              <div id="st-trigger-effects" class="column">
+                <button data-effect="st-effect-6">=</button>
+              </div>
+              
+             
+            </div><!-- /main -->
+          </div><!-- /st-content-inner -->
+        </div><!-- /st-content -->
+      </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+    <script src="js/classie.js"></script>
+    <script src="js/sidebarEffects.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+        $("#myWords").wordsrotator({
+            words: ['design ', 'family ', 'chocolate ']
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: false,
+        easing: "ease",
+        animationTime: 1500,
+        pagination: false,
+        updateURL: true,
+        beforeMove: null,
+        afterMove: null,
+        keyboard: true,
+        direction: "vertical"
+        });
+      });
+  </script>
 <!-- jQuery library -->
 <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -190,7 +260,6 @@
                 });
             });
         </script>
-
         
 </body>
 </html>
