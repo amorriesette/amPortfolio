@@ -22,7 +22,6 @@
 			animationIn: "rotateInDownLeft",
 			animationOut: "rotateOutDownLeft",
 			speed: 4000
-
 		};
 		var settings = $.extend({}, defaults, options);
 		var listItem

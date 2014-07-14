@@ -17,17 +17,17 @@
 !function($){
 
   var defaults = {
-    sectionContainer: "section",
-    easing: "ease",
-    animationTime: 1000,
-    pagination: true,
-    updateURL: false,
-    keyboard: true,
-    beforeMove: null,
-    afterMove: null,
-    loop: true,
-    responsiveFallback: false,
-    direction : 'vertical'
+    sectionContainer: 'section',
+        responsiveFallback: 600,
+        loop: false,
+        easing: 'ease',
+        animationTime: 1000,
+        pagination: true,
+        updateURL: true,
+        beforeMove: null,
+        afterMove: null,
+        keyboard: true,
+        direction: 'vertical'
 	};
 
 	/*------------------------------------------------*/

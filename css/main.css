@@ -4,7 +4,8 @@
     }
     body {
       /*background: #E2E4E7;*/
-      /*background: url(../img/bg.jpg);*/
+      background: url(img/bg2.jpg);
+      background-size: 100%;
       padding: 0;
       text-align: center;
       font-family: 'Lato', sans-serif;
@@ -38,19 +39,7 @@
       letter-spacing: -4px;
       font-weight: 100;
     }
-    /*h1 span {
-      font-size: 26px;
-      margin: 0 5px;
-      text-transform: capitalize;
-      background: rgba(0,0,0,0.85);
-      display: inline-block;
-      color: #6D461D;
-      border-radius: 5px 5px;
-      -webkit-border-radius: 5px 5px;
-      -moz-border-radius: 5px 5px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-      padding: 3px 10px;
-    }*/
+
     h2 {
       color: #6D461D;
       font-weight: 100;
@@ -111,7 +100,6 @@
   border-radius: 80px; /* future proofing */
   -khtml-border-radius: 80px; /* for old Konqueror browsers */
   border: 2px solid black;
-  opacity: 0.8;
 }
 
 
@@ -252,17 +240,14 @@
     }
     
     .main section.page1 {
-      background:rgb(230, 217, 200);
-      /*background: url(../img/houstonSkyline_bg.jpg) no-repeat;
-      background-size: 1820px 1000px;
-      opacity:.7;
+      
     }
     .main section.page1 h1 {
-      text-align: left;
+      text-align: center;
       padding: 0;
       margin-bottom: 15px;
       font-size: 70px;
-      color: black;
+      color: white;
     }
     
     .main section.page1 h2 {
@@ -281,8 +266,8 @@
       text-align: center;
     }
     .main section.page2 {
-      background: url(../img/tanTexture.png);
-      background-size: 1500px;
+      background-color: transparent;
+      background-size: 100%;
     }
     .main section.page2 > img {
       position: absolute;
@@ -316,8 +301,6 @@
       }
 
     .main section.page3 {
-            background: url(../img/tanTexture.png);
-            background-size: 1500px;
      }
     .main section.page3 .page_container {
       overflow: hidden;
@@ -326,15 +309,7 @@
       right: 25px;
       top: 25px;
     }
-    /*.main section.page3 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 0;
-      margin-top: 0;
-      font-size: 70px;
-      letter-spacing: -1px;
-      color: black;
-    }*/
+
     .main section.page3 h2 {
       color: rgba(0,0,0,0.85);
       text-align: left;
@@ -360,9 +335,6 @@
     }
 
     .main section.page4{
-       background: url(../img/houstonSkyline_bg.jpg) no-repeat;
-       background-size: 1820px 1000px;
-       opacity:0.6;
   
     }
     .main section.page4 .page_container {
