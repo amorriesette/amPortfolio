@@ -172,7 +172,8 @@
       color: black;
       background: rgba(255, 255, 255, 0.5);
     }
-    
+
+ 
     header {
       position: relative;
       z-index: 10;
@@ -212,11 +213,6 @@
       line-height: 160%;
     }
     
-    .main section.page2 {
-      background: url(img/LogoStrip.png) no-repeat;
-      background-size: 100%;
-    }
-    
     .main section.page2 .page_container
    {
       position: relative;
@@ -252,12 +248,17 @@
     }
 
     .main section.page2 .portfolioContainer{
+      background-color: rgba(207,109,33,0.9);
       -webkit-column-count: 3;
       -moz-column-count: 3;
       column-count: 3;
     }
-
     
+    .main section.page2 portfolioContainer, .main section.page4 .formBackground{
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+    }
     #portText{
       position:relative; 
       max-height: 40%;
@@ -298,13 +299,17 @@
     }
 
     .main section.page3 p{
-           text-align: left;
-           font-size: 18pt;
-           line-height: 110%;
-           position:relative;
-           left:60%;
-           top:60%;
-           width:35%;
+      background-color: rgba(155,212,180,0.9);
+      color:white;
+      text-align: center;
+      font-size: 16pt;
+      line-height: 110%;
+      position:relative;
+      left:60%;
+      top:60%;
+      width:35%;
+      padding: 14px 14px 14px 14px;
+      border-radius: 40px; 
     }
 
     /*.main section.page3 img{
@@ -391,7 +396,9 @@
       right: 0;
     }
 
-    form {
+/* CONTACT FORM */
+
+form {
   width:459px;
   margin:0 auto;
 }
@@ -419,6 +426,10 @@ input, textarea {
   input:focus, textarea:focus {
     border:1px solid #97d6eb;
   }
+  input:invalid{
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+  }
 
 textarea {
   height:113px;
@@ -441,20 +452,19 @@ textarea {
     opacity:0.9;
   }
 
+.main section.page4 .formBackground{
+  background-color: rgba(138, 222, 188, 0.9);
+  padding: 44px 4px 4px 44px;
+}
+
+  /* END CONTACT FORM */
+
 .socialIcons{
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.formBackground{
-  background-color: rgba(155,212,180,0.9);
-  border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  /*padding-top: 4px;
-  padding-bottom: 14px;*/
-  padding: 4px 4px 4px 10px;
-}
+
 
 </style>
 <script type="text/javascript">
@@ -505,13 +515,14 @@ $('#slideShim2').cycle({
 
       <section class="page2" id="portfolio">
         <div class="page_container">
+
         <img id="portText" src="img/portfolioText.png" width="35%" style="top:30px; right:30%">
           <div class="portfolioContainer">
             <div class="portfolioCol1">
               <a class="sn_open"><img class="icon" src="img/sites/sn/logo.png"></a><br /><h2>Sarina Nicole</h2><img class="skillIcon"src="img/HTML5icon.png"><img class="skillIcon" src="img/JQueryicon.png">
             </div> 
             <div class="portfolioCol2">
-              <a class="sn_open"><img class="icon" src="img/sites/psc/logo.png"></a><br /><h2>IBM PureSystems Centre</h2><img class="skillIcon" src="img/HTML5icon.png">
+              <a class="sn_open"><img class="icon" src="img/sites/psc/logo.png"></a><br /><h2>IBM PureSystems Centre</h2><img class="skillIcon" src="img/HTML5icon.png"><img class="skillIcon" src="img/DOJOicon.png">
             </div>
             <div class="portfolioCol3">
               <a class="sn_open"><img class="icon" src="img/sites/sn2/logo.png"></a><br /><h2>Sarina Nicole Redesign</h2><img class="skillIcon" src="img/HTML5icon.png">
@@ -578,29 +589,29 @@ $('#slideShim2').cycle({
       </section>
 
 	    <section class="page3" id="about">
+         
 	      <div class="page_container">
-           <!-- img src="img/aboutMeCollage.png" / -->
-          <img src="img/aboutmeText.png" style="position:relative; left: 25%;top:70%;" width="40%"/>
-          <p > 
-            I am a 26 year old front-end developer who loves my wonderful family, amazing food, playing competitive volleyball and everything about technology. I graduated from Clark Atlanta University with a BS in Computer Science in 2010. I relocated to Austin, Texas from Atlanta, GA and began my new career. After working in the corporate world since then, I have come to realize that my skills would be best utilized in a dual role as a developer and designer.<br />
-            I have a broad knowlege of UI development, creating interactive mock-ups/prototypes and I always welome any way for me to gain more knowledge in UI/UX Design.
-
-            </p>
           
+          <img src="img/aboutmeText.png" style="position:relative; left: 27%;top:10%; z-index:2;" width="40%"/>
+          
+         
+          <p> 
+            Hi! I'm Angelica, a front-end developer based in Houston, Texas. I love the web and turning my creative ideas into live applications. With 5 years of experience I have a broad knowledge of UI development and I am currently diving into the wonderful world of UI design. When I am not working I spend my time reading UI design blog posts and spending time with my handsome husband and beautiful baby girl.
+          </p> 
         </div>
       </section>
 
       <section class="page4" id="contact">
-        
+       
         <div class="page_container">
            <img src="img/contactmeText.png" width="40%"/>
           <div class="formBackground">
             <form  method="post" action="required.php">
               <label>Name*</label>
-              <input name="name" placeholder="Type Here">
+              <input name="name" placeholder="Type Here" required>
             
               <label>Email*</label>
-              <input name="email" type="email" placeholder="Type Here">
+              <input name="email" type="email" placeholder="Type Here" required>
             
               <label>Message</label>
               <textarea name="message" placeholder="Type Here"></textarea>
