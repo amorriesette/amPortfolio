@@ -5,38 +5,56 @@
 	<title>A. Morriesette | UI Dev & Designer</title>
 	<meta name="title" content="A. Morriesette | UI Developer & Designer" />
 	<meta name="description" content="" />
+  <meta name="author" content="Angelica Morriesette">
+	<!-- link rel="shortcut icon" id="favicon" href="favicon.png" --> 
 
-	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
-	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
-	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
-	<meta name="author" content="Angelica Morriesette">
+	<!-- -------------------------------- Google Fonts -------------------------------- -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Great+Vibes|Pacifico' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  
+  <!-- ------------------------------- JS Files ----------------------------------- -->
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<!-- script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-  <script "js/portfolio.pack.min.js"></script>
+  <script type="text/javascript" src="js/portfolio.pack.min.js"></script>
   <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
-
-  <link rel='stylesheet' href='css/onepage-scroll.css' type='text/css'>
+ 
+  
+  <!-- -------------------------------- CSS Files --------------------------------- -->
+  
+  <link rel="stylesheet" href="css/onepage-scroll.css" type="text/css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
   <link rel="stylesheet" href="css/style.css" type="text/css" /> <!--Social Media Icons -->
   <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" /><!-- Portfolio Overlays -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
 
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <style>
+    body {
+      /*background: #E2E4E7;*/
+      background: url(img/bg2.jpg) no-repeat;
+      background-size: 100%;
+      padding: 0;
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-size: 14pt;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      min-width: 100%;
+    }
+  </style>
 
-
-<style>
-    html {
+  <style>
+      html {
       height: 100%;
     }
     body {
@@ -463,14 +481,11 @@ textarea {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-
-
 </style>
-<script type="text/javascript">
-$(document).ready(function(){
+  <script type="text/javascript">
+    $(document).ready(function(){
 
-  $('#slideShim').cycle({ 
+    $('#slideShim').cycle({ 
       fx:     'fade',
       speed:  1500,
       timeout: 4000,
@@ -480,7 +495,7 @@ $(document).ready(function(){
       pager:  '#pager'
     });
 
-$('#slideShim2').cycle({ 
+    $('#slideShim2').cycle({ 
       fx:     'fade',
       speed:  1500,
       timeout: 4000,
@@ -490,7 +505,7 @@ $('#slideShim2').cycle({
       pager:  '#pager2'
     });
 
-  $('#slideShim3').cycle({ 
+    $('#slideShim3').cycle({ 
       fx:     'fade',
       speed:  1500,
       timeout: 4000,
@@ -500,111 +515,107 @@ $('#slideShim2').cycle({
       pager:  '#pager3'
     });
 
-});
-</script>
+  });
+  </script>
 </head>
 <body>
 
   <div class="wrapper">
 	  <div class="main">
 
+      <!-- --------------------------- Section 1 ------------------------- -->
       <section class="page1" id="home">
-        <div class="page_container"><img src="img/headerName.png" width="100%">
-         </div>
+        <div class="page_container"><img src="img/headerName.png" width="100%"></div>
       </section>
+      <!-- -------------------------- End Section 1 ------------------------- -->
 
+       <!-- -------------------------- Section 2 ------------------------- -->
       <section class="page2" id="portfolio">
         <div class="page_container">
+          <img id="portText" src="img/portfolioText.png" width="35%" style="top:30px; right:30%">
 
-        <img id="portText" src="img/portfolioText.png" width="35%" style="top:30px; right:30%">
+          <!-- -------------------------- Orange Highlighted Section ------------------------- -->
           <div class="portfolioContainer">
             <div class="portfolioCol1">
-              <a class="sn_open"><img class="icon" src="img/sites/sn/logo.png"></a><br /><h2>Sarina Nicole</h2><img class="skillIcon"src="img/HTML5icon.png"><img class="skillIcon" src="img/JQueryicon.png">
+              <a class="sn_open" href="#sn"><img class="icon" src="img/sites/sn/logo.png"></a><br />
+              <h2>Sarina Nicole</h2><img class="skillIcon"src="img/HTML5icon.png"><img class="skillIcon" src="img/JSicon.png">
             </div> 
+            
             <div class="portfolioCol2">
-              <a class="sn_open"><img class="icon" src="img/sites/psc/logo.png"></a><br /><h2>IBM PureSystems Centre</h2><img class="skillIcon" src="img/HTML5icon.png"><img class="skillIcon" src="img/DOJOicon.png">
+              <a class="psc_open" href="#psc"><img class="icon" src="img/sites/psc/logo.png"></a><br /><h2>IBM PureSystems Centre</h2><img class="skillIcon" src="img/HTML5icon.png"><img class="skillIcon" src="img/DOJOicon.png">
             </div>
+            
             <div class="portfolioCol3">
-              <a class="sn_open"><img class="icon" src="img/sites/sn2/logo.png"></a><br /><h2>Sarina Nicole Redesign</h2><img class="skillIcon" src="img/HTML5icon.png">
+              <a class="sn2_open" href="#sn2"><img class="icon" src="img/sites/sn2/logo.png"></a><br /><h2>Sarina Nicole Redesign</h2><img class="skillIcon" src="img/HTML5icon.png">
             </div>   
           </div>  
-        <div id="sn">
-        <!-- Beginning of the slider markup -->
-          <div id="metaContainer">
-  
-          <!-- The sliderr works with virtually any HTML element (div, span etc) but for the sake of simplicity I have used images in this demo -->
-          <div id="slideContainer">
-            <div id="slideShim">
-              <a href="#"><img src="img/sites/sn/SN1.png" width="100%" alt="" /></a>
-              <a href="#"><img src="img/sites/sn/SN2.png" width="100%" alt="" /></a>
-              <a href="#"><img src="img/sites/sn/SN3.png" width="100%" alt="" /></a>
+         
+          <!-- Begin Slider Markup -->
+          <!-- Slider Sarina Nicole -->
+          <div id="sn">
+            <div id="metaContainer">
+              <div id="slideContainer">
+                <div id="slideShim">
+                  <a href="#"><img src="img/sites/sn/SN1.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn/SN2.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn/SN3.png" width="100%" alt="" /></a>
+                </div>
+              </div>
+            <div id="pager" class="clear"></div>
             </div>
           </div>
-    
-          <div id="pager" class="clear"></div>
-        </div>
-         <!-- End of the slider markup -->
-         <!-- Add an optional button to close the popup -->
-         <!-- button class="my_popup_close">Close</button -->
-      </div>
-                <div id="sn2">
-                  <!-- Beginning of the slider markup -->
-                  <div id="metaContainer">
-  
-                    <!-- The sliderr works with virtually any HTML element (div, span etc) but for the sake of simplicity I have used images in this demo -->
-                    <div id="slideContainer">
-                      <div id="slideShim2">
-                        <a href="#"><img src="img/sites/sn2/SN1.png" width="100%" alt="" /></a>
-                        <a href="#"><img src="img/sites/sn2/SN2.png" width="100%" alt="" /></a>
-                        <a href="#"><img src="img/sites/sn2/SN3.png" width="100%" alt="" /></a>
-                        <a href="#"><img src="img/sites/sn2/SN4.png" width="100%" alt="" /></a>
-                        <a href="#"><img src="img/sites/sn2/SN5.png" width="100%" alt="" /></a>
-                      </div>
-                    </div>
-    
-                    <div id="pager2" class="clear"></div>
-                  </div>
-                  <!-- End of the slider markup -->
+          <!-- End Slider Sarina Nicole -->
+                
+          <!-- Slider Sarina Nicole Redesign -->
+          <div id="sn2">
+            <div id="metaContainer">
+              <div id="slideContainer2">
+                <div id="slideShim2">
+                  <a href="#"><img src="img/sites/sn2/SN1.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn2/SN2.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn2/SN3.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn2/SN4.png" width="100%" alt="" /></a>
+                  <a href="#"><img src="img/sites/sn2/SN5.png" width="100%" alt="" /></a>
                 </div>
-                <div id="psc">
-                  <!-- Beginning of the slider markup -->
-                  <div id="metaContainer">
-  
-                    
-                    <!-- The sliderr works with virtually any HTML element (div, span etc) but for the sake of simplicity I have used images in this demo -->
-                    <div id="slideContainer">
-                      <div id="slideShim3">
-                        <a href="#"><img src="img/sites/psc/PSC1.png" width="90%" alt="" /></a>
-                        <a href="#"><img src="img/sites/psc/PSC2.png" width="90%" alt="" /></a>
-                        <a href="#"><img src="img/sites/psc/PSC3.png" width="90%" alt="" /></a>
-          
-                      </div>
-                    </div>
-    
-                    <div id="pager3" class="clear"></div>
-
-                  <!-- End of the slider markup >
-                </div --> 
               </div>
-      </section>
+            <div id="pager2" class="clear"></div>
+            </div>
+          </div>
+          <!-- End Slider Sarina Nicole Redesign -->     
 
+          <!-- Slider PureSystems Centre -->
+          <div id="psc">
+            <div id="metaContainer">
+              <div id="slideContainer3">
+                <div id="slideShim3">
+                  <a href="#"><img src="img/sites/psc/PSC1.png" width="90%" alt="" /></a>
+                  <a href="#"><img src="img/sites/psc/PSC2.png" width="90%" alt="" /></a>
+                  <a href="#"><img src="img/sites/psc/PSC3.png" width="90%" alt="" /></a>
+                </div>
+              </div>
+              <div id="pager3" class="clear"></div>
+            </div>
+          </div>
+          <!-- End Slider PureSystems Centre -->
+      </section>
+      <!-- -------------------------- End Section 2 ------------------------- --> 
+
+
+      <!-- -------------------------- Section 3 ------------------------- -->
 	    <section class="page3" id="about">
-         
-	      <div class="page_container">
-          
+        <div class="page_container">
           <img src="img/aboutmeText.png" style="position:relative; left: 27%;top:10%; z-index:2;" width="40%"/>
-          
-         
-          <p> 
-            Hi! I'm Angelica, a front-end developer based in Houston, Texas. I love the web and turning my creative ideas into live applications. With 5 years of experience I have a broad knowledge of UI development and I am currently diving into the wonderful world of UI design. When I am not working I spend my time reading UI design blog posts and spending time with my handsome husband and beautiful baby girl.
-          </p> 
+            <p> 
+              Hi! I'm Angelica, a front-end developer based in Houston, Texas. I love the web and turning my creative ideas into live applications. With 5 years of experience I have a broad knowledge of UI development and I am currently diving into the wonderful world of UI design. When I am not working I spend my time reading UI design blog posts and spending time with my handsome husband and beautiful baby girl.
+            </p> 
         </div>
       </section>
+      <!-- -------------------------- End Section 3 ------------------------- -->
 
+      <!-- -------------------------- Section 4 ------------------------- -->
       <section class="page4" id="contact">
-       
         <div class="page_container">
-           <img src="img/contactmeText.png" width="40%"/>
+          <img src="img/contactmeText.png" width="40%"/>
           <div class="formBackground">
             <form  method="post" action="required.php">
               <label>Name*</label>
@@ -618,26 +629,27 @@ $('#slideShim2').cycle({
             
               <input id="submit" name="submit" type="submit" value="Submit">
             </form>
-         
-          <script src='http://codepen.io/assets/libs/fullpage/none.js'></script>
-          <script src="js/index.js"></script>
-        
-          <div class="socialIcons" style="position:relative; top:30%;">
-           
-            <a href="https://www.facebook.com/GeliFaith" class="icon-button facebook"><i class="icon-facebook icon-large"></i><span></span></a>
-            <a href="https://plus.google.com/u/0/115734615667745391316/posts" class="icon-button google-plus"><i class="icon-google-plus icon-large"></i><span></span></a>
-            <a href="www.linkedin.com/pub/angelica-morriesette/14/833/65a" class="icon-button linkedin"><i class="icon-linkedin icon-large"></i><span></span></a>
-            <a href="https://github.com/amorriesette" class="icon-button github"><i class="icon-github icon-large"></i><span></span></a>
+
+            <!-- Social Icons under form -->
+            <div class="socialIcons" style="position:relative; top:30%;">
+              <a href="https://www.facebook.com/GeliFaith" class="icon-button facebook"><i class="icon-facebook icon-large"></i><span></span></a>
+              <a href="https://plus.google.com/u/0/115734615667745391316/posts" class="icon-button google-plus"><i class="icon-google-plus icon-large"></i><span></span></a>
+              <a href="www.linkedin.com/pub/angelica-morriesette/14/833/65a" class="icon-button linkedin"><i class="icon-linkedin icon-large"></i><span></span></a>
+              <a href="https://github.com/amorriesette" class="icon-button github"><i class="icon-github icon-large"></i><span></span></a>
+            </div>
+            <!-- End Social Icons -->
           </div>
+          <!-- End Blue Section -->
         </div>
-
-        </div>
-
+        <!-- End Page Container -->
       </section>
-      
+      <!-- Section Page 4 -->
     </div>
 
-<script>
+  <script type="text/javascript" src="http://codepen.io/assets/libs/fullpage/none.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+  <script>
     $(document).ready(function(){
       $(".main").onepage_scroll({
         sectionContainer: "section",
@@ -651,36 +663,22 @@ $('#slideShim2').cycle({
         afterMove: null,
         keyboard: true,
         direction: "vertical"
-        });
       });
-  </script>
-<!-- jQuery library -->
-<script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
-<script type="text/javascript" src="js/jquery.eislideshow.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $('#ei-slider').eislideshow({
-      easing    : 'easeOutExpo',
-      titleeasing : 'easeOutExpo',
-      titlespeed  : 1200
     });
-  });
-</script>
-<script>
-    $(document).ready(function() {
+  </script>
 
-      // Initialize the plugin
+  <script>
+    $(document).ready(function() {
+    // Initialize the plugin
       $('#sn').popup({
         opacity:0.3,
         transition:'all 0.6s'});
-       $('#sn2').popup({
+      $('#sn2').popup({
         opacity:0.3,
         transition:'all 0.6s'});
-         $('#psc').popup({
+      $('#psc').popup({
         opacity:0.3,
         transition:'all 0.6s'});
-
     });
   </script>
 </body>
