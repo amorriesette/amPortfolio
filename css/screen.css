@@ -79,6 +79,22 @@ html[xmlns] .clear { display: block;}
 	z-index: 1;
 
 }
+#slideContainer2 { 
+	margin: 0 auto; 
+	width: 830px; 
+	height: 350px; 
+	padding: 20px 81px; 
+	z-index: 1;
+
+}
+#slideContainer3 { 
+	margin: 0 auto; 
+	width: 830px; 
+	height: 350px; 
+	padding: 20px 81px; 
+	z-index: 1;
+
+}
 
 
 
