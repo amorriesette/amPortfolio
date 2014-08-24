@@ -26,25 +26,22 @@
   
   <!-- -------------------------------- CSS Files --------------------------------- -->
   
-  
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/onepage-scroll.css" type="text/css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" /> <!--Social Media Icons -->
   <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" /><!-- Portfolio Overlays -->
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/reset.css">
- <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-
-
 
   <style>body{background: url(img/bg2.jpg) no-repeat; background-size: cover;} </style>
 
   
 </head>
 <body>
-  
+
   <div class="wrapper">
     <div class="main">
 
@@ -130,15 +127,10 @@
         <div class="page_container">
            <img src="img/aboutmeText.png" id="aboutMeText"/>
           <div class="formBackground">
-            <p> <img id="headshot" src="img/Headshot.jpg" width="20%"/>
+            <p> <img src="img/Headshot.jpg" width="20%"/>
               Hi! I'm Angelica, a front-end developer based in Houston, Texas. I love to turn my creative ideas into live applications. With 5 years of experience I have a broad knowledge of UI development and I am currently diving into the wonderful world of UI design. When I am not working I spend my time reading UI design blog posts and spending time with my handsome husband and beautiful baby girl.
-            </p> 
-            <!-- img id="aboutMeSkills" src="img/aboutMeSkills.png" width="10%" height="10%"/ -->  
-            <!--div>
-             
-              <a href="" class="icon-button linkedin"><i class="icon-cloud"></i><span></span></a>
-            </div>        
-          </div -->
+            </p>           
+          </div>
           <!-- End Blue Section -->
         </div>
         <!-- End Page Container -->
@@ -150,35 +142,67 @@
         <div class="page_container">
           <img src="img/contactmeText.png" width="40%"/>
           <div class="formBackground">
-            <form method="post" action="send_email.php">
-              <label>Name*</label>
-              <input name="name" placeholder="" required>
             
-              <label>Email*</label>
-              <input name="email" type="email" placeholder="" required>
             
-              <label>Message*</label>
-              <textarea name="message" placeholder="" required></textarea>
-            
-              <input id="submit" name="submit" type="submit" value="Submit">
-            </form>
-            
+
+            <?php
+              function spamcheck($field) {
+                // Sanitize e-mail address
+                $field=filter_var($field, FILTER_SANITIZE_EMAIL);
+                // Validate e-mail address
+                if(filter_var($field, FILTER_VALIDATE_EMAIL)) {
+                  return TRUE;
+                } else {
+                  return FALSE;
+                }
+              }
+            ?>
+
+            <h2>Feedback Form</h2>
+            <?php
+              // display form if user has not clicked submit
+            if (!isset($_POST["submit"])) {
+              ?>
+                <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+                  Name: <input type="text" name="Name"><br>
+                  Email: <input type="text" name="email"><br>
+                  Message: <textarea rows="10" cols="40" name="message"></textarea><br>
+                  <input type="submit" name="submit" value="Submit Feedback">
+                </form>
+                <?php 
+              } else {  // the user has submitted the form
+                // Check if the email input field is filled out
+                if (isset($_POST["email"])) {
+                  // Check if email address is valid
+                  $mailcheck = spamcheck($_POST["email"]);
+                  if ($mailcheck==FALSE) {
+                    echo "Invalid input";
+                } else {
+                  $name = $_POST["name"]; // sender
+                  $email = $_POST["email"];
+                  $message = $_POST["message"];
+                  // message lines should not exceed 70 characters (PHP rule), so wrap it
+                  $message = wordwrap($message, 70);
+                  // send mail
+                  mail("afmorriesette@gmail.com","Potential Portfolio Contact",$message,"From: $name\n");
+                  echo "Thank you for sending us feedback";
+                }
+              }
+            }
+            ?>
+
+            <!-- Social Icons under form -->
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/GeliFaith" class="icon-button facebook"><i class="icon-facebook icon-large"></i><span></span></a>
+              <a href="https://plus.google.com/u/0/115734615667745391316/posts" class="icon-button google-plus"><i class="icon-google-plus icon-large"></i><span></span></a>
+              <a href="www.linkedin.com/pub/angelica-morriesette/14/833/65a" class="icon-button linkedin"><i class="icon-linkedin icon-large"></i><span></span></a>
+              <a href="https://github.com/amorriesette" class="icon-button github"><i class="icon-github icon-large"></i><span></span></a>
+            </div>
+            <!-- End Social Icons -->
           </div>
           <!-- End Blue Section -->
-          <div id="footer">
-            <div id="contactInfo">
-              <a href="mailto:afmorriesette@gmail.com">afmorriesette@gmail.com</a><br /> (512) 820-1362
-            </div>
-            <div id="socialIcons">
-              <a href="https://github.com/amorriesette" class="icon-button github"><i class="icon-github-sign"></i><span></span></a>
-              <a href="http://facebook.com" class="icon-button facebook"><i class="icon-facebook-sign"></i><span></span></a>
-              <a href="https://plus.google.com/115734615667745391316/about/p/pub" class="icon-button google-plus"><i class="icon-google-plus-sign"></i><span></span></a>
-              <a href="https://www.linkedin.com/pub/angelica-morriesette/14/833/65a" class="icon-button linkedin"><i class="icon-linkedin-sign"></i><span></span></a>
-            </div>
-          </div>
         </div>
         <!-- End Page Container -->
-
       </section>
       <!-- Section Page 4 -->
     </div>

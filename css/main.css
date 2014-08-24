@@ -18,6 +18,8 @@
 
     a {
       text-decoration: none;
+      color: #ffffff;
+      font-style: italic;
     }
     
     h1, h2 {
@@ -157,6 +159,11 @@
       text-align: center;
       line-height: 160%;
       font-weight: 100;
+      font-size: 
+    }
+
+    .main section.page2 a{
+      color:#fff;
     }
 
     .main section.page2 .portfolioContainer img.icon{
@@ -180,11 +187,15 @@
       -webkit-border-radius:5px;
     }
 
-    #sn2Slides img{width:150%;} 
-
     #snSlides img{width:100%;}
 
-    #pscSlides img{width:80%;}
+    #pscSlides img{width:100%;}
+
+    .contenthover { padding:20px 20px 10px 20px; }
+    .contenthover, .contenthover h3, contenthover a { color:#fff; }
+    .contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+    .contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+    .contenthover a.mybutton:hover { background:#34742d }
 
     #portText{
       position:relative; 
@@ -199,7 +210,7 @@
      /******** Section 3 **********/
     .main section.page3 .page_container {
       position: relative;
-      top: 10.5%;
+      top: .5%;
       margin: 10px auto 0;
       max-width: 100%;
       min-height: 30%;
@@ -215,14 +226,12 @@
     }
 
     .main section.page3 p{
-    
       color:white;
       left:5%;
       text-align: left;
       font-size: 16pt;
       line-height: 110%;
       position:relative;
-      
       top:60%;
       width:85%;
       padding: 14px 14px 14px 14px;
@@ -237,6 +246,20 @@
       width: 40%;
     }
 
+    #headshot{
+      float:right; 
+      margin: 0 0 10px 10px;
+      padding: 3px;
+      border: 2px solid; 
+      border-radius: 360%;
+    }
+
+    #aboutMeSkills{
+      position: relative;
+      top:-35px;
+      left: -26%;
+    }
+
     /********* Section 4 **********/
     .main section.page4 .page_container {
       /*overflow: hidden;*/
@@ -246,6 +269,17 @@
       max-height: 100%;
       /*right: -120px;*/
     }
+
+     #footer{
+      position: relative;
+      top: 45%;
+      padding-top: 7px;
+      margin: 100 auto 0;
+      max-width: 100%;
+      height: 78px;
+      background-color: rgb(207,109,33);
+    }
+      
     .main section.page4 h1 {
       text-align: left;
       padding: 0;
@@ -265,12 +299,20 @@
     .main section.page4 .page_container img{
       position: relative;
       right:25%;
-      top:70%;
+      top:30%;
+    }
+
+    #contactInfo{
+      position:absolute;
+      left: 20px;
+      top: 30%;
+      color: #ffffff;
+      text-align: left;
     }
 
     form {
       width:459px;
-      margin:0 auto;
+      margin:0px auto;
     }
 
     label {
@@ -314,6 +356,7 @@
       height:38px;
       border:none;
       margin-top:20px;
+      color: #ffffff;
     }
 
     #submit:hover {
@@ -322,16 +365,18 @@
 
     .main section.page4 .formBackground, .main section.page3 .formBackground{
       background-color: rgba(138, 222, 188, 0.9);
-      padding: 44px 4px 4px 44px;
+      padding: 44px 4px 44px 64px;
     }
 
     .main section.page3 .formBackground img{
-      float:right; margin: 0 0 10px 10px;padding: 3px;border: 2px solid; border-radius: 360%;
-    }
+      /*float:right; 
+      margin: 0 0 10px 10px;
+      padding: 3px;
+      border: 2px solid; 
+      border-radius: 360%;
+    */}
 
-    .socialIcons{
-      padding-top: 15px;
-      padding-bottom: 15px;
-      position: relative;
-      top:30%;
+    @media only screen and (max-width: 800px){
+      body{font-size: 80%;}
+      .formBackground p{font-size: 80%;}
     }

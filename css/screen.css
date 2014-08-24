@@ -33,24 +33,41 @@ html[xmlns] .clear {
 }
 
 .main section.page2 .wrapper { 
-	width:730px; 
+	width:100%; 
 	margin:0 auto; 
 	padding-top: 50px;
 }
 
 #metaContainer {
 	position: relative; 
-	top:-190px;
+	top:-150px;
 }
 
 /* moved sn2 slides to the left */
 #sn2 #metaContainer{
-	left:-150px;
+	/*left:-150px;
+	top:-200px;*/
+}
+
+#psc #metaContainer{
+	left: 0px;
 }
 
 
 /* Pagination for each slider*/
-#pager, #pager2, #pager3  {text-align: center; margin: -59px auto 0px; z-index: 100; width: 45px; position: relative; top: 340px; left: 470px;}
+#pager, #pager2, #pager3  {text-align: center; margin: -59px auto 0px; z-index: 100; width: 50%; position: relative; left: 470px;}
+
+#pager {
+	top: 330px;
+}
+#pager2 {
+	top: 280px;
+}
+
+#pager3 {
+	top: 235px;
+}
+
 #pager a, #pager2 a, #pager3  a {display: block;text-indent: -5000px;width: 10px;height: 10px;background-image:url(../img/pager-sprite.png);background-repeat: no-repeat; float: left; margin-right: 5px;}
 #pager a, #pager2 a, #pager3  a {background-position: 0 0;}
 #pager a:hover, #pager2 a:hover, #pager3  a:hover {background-position: 0 -11px;}
@@ -63,9 +80,16 @@ html[xmlns] .clear {
 #slideContainer { 
 	margin: 0 auto; 
 	width: 830px; 
-	height: 350px; 
+	height: 350px;
 	padding: 20px 81px; 
 	z-index: 1;
+}
+
+@media only screen and (max-width: 400px){
+	#slideContainer { 
+	
+		height: 750px;
+	}
 }
 
 
