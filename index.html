@@ -13,19 +13,10 @@
   <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Great+Vibes|Pacifico' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-  
-  <!-- ------------------------------- JS Files ----------------------------------- -->
-  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-  <script type="text/javascript" src="js/portfolio.pack.min.js"></script>
-  <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'></script>
  
   
   <!-- -------------------------------- CSS Files --------------------------------- -->
-  
   
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="css/onepage-scroll.css" type="text/css">
@@ -34,7 +25,19 @@
   <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" /><!-- Portfolio Overlays -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+  
+  <!-- ------------------------------- JS Files ----------------------------------- -->
+
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <script type="text/javascript" src="js/portfolio.pack.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+ 
  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+ <link rel="stylesheet" href="jquery.wordrotator.css" />
+
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
 
@@ -50,7 +53,8 @@
 
       <!-- ------------ Section 1 ------------ -->
       <section class="page1" id="home">
-        <div class="page_container"><img src="img/headerName.png" width="100%"></div>
+        <div class="page_container"><img id="headerImg"src="img/headerName.png" width="100%">
+        </div>
       </section>
       <!-- ----------- End Section 1 ---------- -->
 
@@ -61,17 +65,18 @@
 
           <!-- ----------- Orange Highlighted Section -------------- -->
           <div class="portfolioContainer">
-            <div id="portfolioCol1">
-              <a class="sn_open" href="#sn"><img class="icon" src="img/sites/sn/logo.png"></a><br />
-              <h2><a class="sn_open" href="#sn">Sarina Nicole</a></h2><img class="skillIcon"src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/JS_Logo_wo_circle.png"><img class="skillIcon" src="img/CSS3_Logo_wo_circle.png">
+            <div id="portfolioCol1">test
+              <!-- a class="sn_open" href="#sn"><img src="img/sites/sn/SN1.png" height="auto"width="100%"></a -->
+              
+              <!-- h2><a class="sn_open" href="#sn">Sarina Nicole</a></h2>< img class="skillIcon"src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/JS_Logo_wo_circle.png"><img class="skillIcon" src="img/CSS3_Logo_wo_circle.png" -->
             </div> 
             
-            <div id="portfolioCol2">
-              <a class="psc_open" href="#psc"><img class="icon" src="img/sites/psc/logo.png"></a><br /><h2> <a class="psc_open" href="#psc">IBM PureSystems Centre</a></h2><img class="skillIcon" src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/DOJO_Logo_wo_circle.png">
+            <div id="portfolioCol2">test
+              <!-- a class="psc_open" href="#psc"><img src="img/sites/psc/screen1.png" width="120%"></a --><!--br /><h2> <a class="psc_open" href="#psc">IBM PureSystems Centre</a></h2><img class="skillIcon" src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/DOJO_Logo_wo_circle.png" -->
             </div>
             
-            <div id="portfolioCol3">
-              <a class="sn2_open" href="#sn2"><img class="icon" src="img/sites/sn2/logo.png"></a><br /><h2><a class="sn2_open" href="#sn2">Sarina Nicole Redesign</a></h2><img class="skillIcon" src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/CSS3_Logo_wo_circle.png">
+            <div id="portfolioCol3">test
+              <!-- a class="sn2_open" href="#sn2"><img src="img/sites/sn2/SN1.png" width="102%"></a --><!--br /><h2><a class="sn2_open" href="#sn2">Sarina Nicole Redesign</a></h2><img class="skillIcon" src="img/HTML5_Logo_wo_circle.png"><img class="skillIcon" src="img/CSS3_Logo_wo_circle.png" -->
             </div>   
           </div>  
          
@@ -130,15 +135,15 @@
         <div class="page_container">
            <img src="img/aboutmeText.png" id="aboutMeText"/>
           <div class="formBackground">
+             
             <p> <img id="headshot" src="img/Headshot.jpg" width="20%"/>
               Hi! I'm Angelica, a front-end developer based in Houston, Texas. I love to turn my creative ideas into live applications. With 5 years of experience I have a broad knowledge of UI development and I am currently diving into the wonderful world of UI design. When I am not working I spend my time reading UI design blog posts and spending time with my handsome husband and beautiful baby girl.
             </p> 
-            <!-- img id="aboutMeSkills" src="img/aboutMeSkills.png" width="10%" height="10%"/ -->  
-            <!--div>
+            <!-- img id="aboutMeSkills" src="img/aboutMeSkills.png" width="7%" height="10%"/>  
+             <a href="https://github.com/amorriesette" class="icon-button github"><i class="icon-cloud"></i><span></span></a -->
+              
              
-              <a href="" class="icon-button linkedin"><i class="icon-cloud"></i><span></span></a>
-            </div>        
-          </div -->
+          </div>
           <!-- End Blue Section -->
         </div>
         <!-- End Page Container -->
@@ -253,5 +258,6 @@
         transition:'all 0.6s'});
     });
   </script>
+
 </body>
 </html>
