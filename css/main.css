@@ -119,9 +119,11 @@
     }
     
     /******* Landing Section *******/
-    .main section.page1 {
-      
+    #headerImg{
+      position:relative; 
+      top: 60px;
     }
+
     .main section.page1 h1 {
       text-align: center;
       padding: 0;
@@ -174,11 +176,22 @@
       width: 20%;
     }
 
+    .main section.page2 .portfolioContainer img{
+      -webkit-filter: saturate(40%);
+    }
+
+    .main section.page2 .portfolioContainer img:hover{
+      -webkit-filter: saturate(100%);
+    }
+
     .main section.page2 .portfolioContainer{
       background-color: rgba(207,109,33,0.9);
       -webkit-column-count: 3;
       -moz-column-count: 3;
       column-count: 3;
+      -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 0px; /* Firefox */
+      column-gap: 0px;
     }
     
     .main section.page2 portfolioContainer, .main section.page4 .formBackground, .main section.page3 .formBackground{
