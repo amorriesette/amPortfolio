@@ -21,7 +21,7 @@
       color: #ffffff;
       font-style: italic;
     }
-    
+
     h1, h2 {
       width: 100%;
       float: left;
@@ -43,11 +43,11 @@
       margin-bottom: 10px;
       font-size: 1em;
     }
-  
+
     .wrapper {
       height: 100% !important;
       height: 100%;
-      margin: 0 auto; 
+      margin: 0 auto;
       overflow: hidden;
     }
 
@@ -74,12 +74,17 @@
       border: 2px solid black;
     }
 
+    .centerAlign{
+    position: relative;
+    left:10%;
+    }
+
     .main {
       float: left;
       width: 100%;
       margin: 0 auto;
     }
-    
+
     .main h1 {
       padding:150px 50px;
       float: left;
@@ -92,7 +97,7 @@
       color: white;
       margin: 0;
     }
-   
+
     .clear {
       width: auto;
     }
@@ -111,16 +116,16 @@
     .main section  {
       overflow: hidden;
     }
-    
+
     .main section > img {
       position: absolute;
       max-width: 100%;
       z-index: 1;
     }
-    
+
     /******* Landing Section *******/
     #headerImg{
-      position:relative; 
+      position:relative;
       top: 60px;
     }
 
@@ -131,7 +136,7 @@
       font-size: 70px;
       color: white;
     }
-    
+
     .main section.page1 h2 {
       color: rgba(0,0,0,0.85);
       text-align: center;
@@ -140,7 +145,7 @@
     }
 
     /******* Section 2 ********/
-    
+
     .main section.page2 .page_container
    {
       position: relative;
@@ -161,7 +166,7 @@
       text-align: center;
       line-height: 160%;
       font-weight: 100;
-      font-size: 
+      font-size:
     }
 
     .main section.page2 a{
@@ -192,9 +197,9 @@
       -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
       -moz-column-gap: 0px; /* Firefox */
       column-gap: 0px;
-     
+
     }
-    
+
     .main section.page2 portfolioContainer, .main section.page4 .formBackground, .main section.page3 .formBackground{
       border-radius:5px;
       -moz-border-radius:5px;
@@ -212,7 +217,7 @@
     .contenthover a.mybutton:hover { background:#34742d }
 
     #portText{
-      position:relative; 
+      position:relative;
       max-height: 40%;
       width: 30%;
     }
@@ -220,7 +225,7 @@
     .clear{
       clear: both;
      }
-     
+
      /******** Section 3 **********/
     .main section.page3 .page_container {
       position: relative;
@@ -231,6 +236,9 @@
       z-index: 3;
     }
 
+  .main section.page3 .formBackground{
+    left:30%;
+  }
     .main section.page3 h2 {
       color: rgba(0,0,0,0.85);
       text-align: left;
@@ -249,30 +257,32 @@
       top:60%;
       width:85%;*/
       position: relative;
-      left: 20%;
+      left: 10%;
       padding: 14px 14px 54px 14px;
-      border-radius: 40px; 
+      border-radius: 40px;
       margin-left: 30px;
     }
 
     #aboutMeText{
-      position:relative; 
+      position:relative;
       left: 27%;
-      top:10%; 
+      top:10%;
       z-index:2;
       width: 40%;
     }
 
     #headshot{
-      float:left; 
+      float:left;
       padding: 3px;
-      border: 2px solid; 
+      border: 2px solid #fff;
       border-radius: 360%;
     }
 
 
     .main section.page3 .formBackground p{
-      width: 50%;
+      width: 60%;
+      text-align: left;
+
     }
 
     /********* Section 4 **********/
@@ -294,7 +304,7 @@
       height: 78px;
       background-color: rgb(207,109,33);
     }
-      
+
     .main section.page4 h1 {
       text-align: left;
       padding: 0;
