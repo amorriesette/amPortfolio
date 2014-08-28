@@ -74,6 +74,11 @@
       border: 2px solid black;
     }
 
+    .centerAlign{
+    position: relative;
+    left:10%;
+    }
+
     .main {
       float: left;
       width: 100%;
@@ -252,7 +257,7 @@
       top:60%;
       width:85%;*/
       position: relative;
-      left: 5%;
+      left: 10%;
       padding: 14px 14px 54px 14px;
       border-radius: 40px;
       margin-left: 30px;
@@ -269,7 +274,7 @@
     #headshot{
       float:left;
       padding: 3px;
-      border: 2px solid;
+      border: 2px solid #fff;
       border-radius: 360%;
     }
 
