@@ -241,15 +241,18 @@
 
     .main section.page3 p{
       color:white;
-      left:5%;
+      /*left:5%;
       text-align: left;
       font-size: 16pt;
       line-height: 110%;
       position:relative;
       top:60%;
-      width:85%;
-      padding: 14px 14px 14px 14px;
+      width:85%;*/
+      position: relative;
+      left: 20%;
+      padding: 14px 14px 54px 14px;
       border-radius: 40px; 
+      margin-left: 30px;
     }
 
     #aboutMeText{
@@ -262,12 +265,15 @@
 
     #headshot{
       float:left; 
-      margin: 0 0 10px 10px;
       padding: 3px;
       border: 2px solid; 
       border-radius: 360%;
     }
 
+
+    .main section.page3 .formBackground p{
+      width: 50%;
+    }
 
     /********* Section 4 **********/
     .main section.page4 .page_container {
@@ -377,9 +383,6 @@
       padding: 44px 4px 44px 64px;
     }
 
-    .main section.page3 .formBackground p{
-      width: 50%;
-    }
 
     @media only screen and (max-width: 800px){
       body{font-size: 80%;}
