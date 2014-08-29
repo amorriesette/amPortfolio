@@ -126,7 +126,18 @@
     /******* Landing Section *******/
     #headerImg{
       position:relative;
-      top: 60px;
+      top: 30px;
+    }
+
+    #comingSoon{
+      position:absolute;
+      top: -30%;
+      left: 25%;
+    }
+
+    .csButtons{
+      position:relative;
+      top: 40%;
     }
 
     .main section.page1 h1 {
@@ -268,7 +279,7 @@
       left: 27%;
       top:10%;
       z-index:2;
-      width: 40%;
+      width: 50%;
     }
 
     #headshot{
@@ -283,6 +294,12 @@
       width: 60%;
       text-align: left;
 
+    }
+
+    #aboutMeCaption{
+      position: absolute;
+      left:19%;
+      top: -20%;
     }
 
     /********* Section 4 **********/
