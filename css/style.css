@@ -53,9 +53,15 @@
 	background-color: #000000;
 }
 
+.icon-button .icon-cloud{
+	position:relative;
+	left:-30%;
+
+}
+
 
 .linkedin span{
-	background-color: rgb(35,107,162);
+	color: rgb(35,107,162);
 }
 
 /* Icons */
